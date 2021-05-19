@@ -1,0 +1,30 @@
+{
+     Scanner scanner = new Scanner(System.in);
+     double number, result;
+     boolean valid = true;
+        String woman;
+        String man;
+
+        System.out.println("Type your height, and type if you´re a man or woman");
+        number = scanner.nextDouble();
+        man = scanner.nextLine();
+        woman = scanner.nextLine();
+
+        while(!man.equalsIgnoreCase()){
+            System.out.println("type you sex again");
+            man = scanner.nextLine();
+        }
+        while(!woman.equalsIgnoreCase(woman)){
+            System.out.println("type you sex again");
+            woman = scanner.nextLine();
+        }
+        if(man == String.valueOf(1.70 < 1.98)){
+            man = Double.toString(number);
+            result = (72.7 * number)- 58;
+            System.out.println("Your weight ideal is " + result);
+        }
+        else if(woman == String.valueOf(1.60 < 1.90))
+            woman = Double.toString(number);
+            result = (62.1 * number)- 44.7;
+            System.out.println("Your weight ideal is " + result);
+        }
